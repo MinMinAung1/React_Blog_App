@@ -11,18 +11,18 @@ function NewBlogForm(props) {
 
     function submitHandler(event) {
         event.preventDefault()
-        const title = titleRef.current.value
+        const title = titleRef.current.value//you can change value if as you
         const author = authorRef.current.value
         const image = imageRef.current.value
         const body = bodyRef.current.value
 
         const post = {
-            title,
+            title,// title : title, 
             author,
             image,
             body
-        }
-
+        }//create object
+       console.log(post)
         props.onCreate(post)
     }
 

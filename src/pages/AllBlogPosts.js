@@ -23,7 +23,7 @@ function AllBlogPosts() {
    const [isloading,setIsLoading] = useState(true)
  
    useEffect(() =>{
-    fetch('https://testing-app-7b5f4-default-rtdb.asia-southeast1.firebasedatabase.app/blog.json')
+    fetch('https://react-be3c7-default-rtdb.asia-southeast1.firebasedatabase.app/blog.json')
    .then((response) => {
     if(response.status === 200){
       return response.json()

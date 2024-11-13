@@ -8,7 +8,7 @@ function NewBlogPost() {
 
     function onCreate(post) {
         //fetch is a function of pureJS
-        fetch('https://testing-app-7b5f4-default-rtdb.asia-southeast1.firebasedatabase.app/blog.json',{
+        fetch('https://react-be3c7-default-rtdb.asia-southeast1.firebasedatabase.app/blog.json',{
             method : 'POST',
             body : JSON.stringify(post),
             headers : {
